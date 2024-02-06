@@ -1,9 +1,9 @@
-export const Profile = ({name, tag, location, image, stats}) => {
+export const Profile = ({userData:{name, tag, location, avatar, stats}}) => {
   return (
     <div>
       <div>
         <img
-          src={image}
+          src={avatar}
           alt="User avatar"
         />
         <p>{name}</p>

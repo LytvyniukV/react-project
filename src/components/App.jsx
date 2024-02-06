@@ -1,20 +1,11 @@
-const Product = () => {
-  return (
-    <div>
-      <h2>Cookies</h2>
-			<p>Price: 999 credits</p>
-    </div>
-  );
-};
+import { Profile } from "./Profile";
+import userData from '../jsonData/userData.json'
 
 export default function App() {
+  console.log(userData);
   return (
-    <div>
-      <h1>Products</h1>
-
-      <Product />
-      <Product />
-      <Product />
-    </div>
+    <>
+      <Profile userData={userData}/>
+    </>
   );
 }
