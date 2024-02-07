@@ -1,0 +1,22 @@
+.friendName {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.friendStatus {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.friendOnline {
+  composes: friendStatus;
+  color: green;
+}
+
+.friendOffline {
+  composes: friendStatus;
+  color: rgb(235, 82, 82);
+}
