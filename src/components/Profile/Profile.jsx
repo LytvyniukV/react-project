@@ -1,13 +1,11 @@
 import css from "./Profile.module.css";
 
-export const Profile = ({
-  userData: { username, tag, location, avatar, stats },
-}) => {
+export const Profile = ({name, tag, location, image, stats}) => {
   return (
     <div className={css.profileWrap}>
       <div className={css.profileMainInfoWrap}>
-        <img className={css.profileImg} src={avatar} alt="User avatar" width={150} height={150}/>
-        <p className={css.profileTitle}>{username}</p>
+        <img className={css.profileImg} src={image} alt="User avatar" width={150} height={150}/>
+        <p className={css.profileTitle}>{name}</p>
         <p className={css.profileText}>@{tag}</p>
         <p className={css.profileText}>{location}</p>
       </div>

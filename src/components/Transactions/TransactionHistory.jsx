@@ -15,7 +15,7 @@ export const TransactionsHistory = ({ transactions }) => {
         {transactions.map(({ id, type, amount, currency }) => {
           return (
             <tr key={id}>
-              <td>{type[0].toUpperCase() + type.slice(1)}</td>
+              <td className={css.amount}>{type}</td>
               <td>{amount}</td>
               <td>{currency}</td>
             </tr>

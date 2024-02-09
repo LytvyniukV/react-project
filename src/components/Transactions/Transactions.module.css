@@ -44,3 +44,7 @@ td, th {
     padding: 0;
     border: 1px solid black;  /* границы между столбцами */
 }
+
+.amount{
+    text-transform: capitalize;
+}
